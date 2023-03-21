@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 0.5rem 2rem;
+  color: #545454;
+  grid-row: 1;
+  grid-column: 2 / 4;
+}
+.header h4 {
+  text-transform: capitalize;
+}
+
+.user__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.user__header img {
+  max-width: 2.2rem;
+  border-radius: 3rem;
+  margin: auto;
+}

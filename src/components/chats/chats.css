@@ -1,0 +1,72 @@
+.chats {
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0rem;
+  right: 7rem;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+  border: 1px solid #3e56c8;
+}
+
+.chats p {
+  display: flex;
+  gap: 1rem;
+}
+
+.chats h4 {
+  min-width: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #3e56c8;
+  color: white;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.chat__list {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chat__list img {
+  border-radius: 50%;
+  max-width: 1.5rem;
+}
+.chat__list p {
+  width: 10rem;
+}
+
+.chat__lists {
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.chat__lists::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.chat__lists::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.chat__lists::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+.chat__list:hover {
+  background-color: #f5f5f5;
+}
