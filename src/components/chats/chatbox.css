@@ -15,14 +15,17 @@
 .chat__icons {
   cursor: pointer;
   /* padding: 0 0; */
+  display: flex;
+  align-items: center;
 }
 
 .chat__box h5 {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #3e56c8;
   color: white;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .chat__box p {
@@ -32,7 +35,7 @@
 }
 
 .chat__box img {
-  max-width: 2rem;
+  max-width: 1.5rem;
   border-radius: 50%;
 }
 

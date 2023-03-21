@@ -30,11 +30,6 @@
   font-size: 1.1rem;
 }
 
-.nav__links a.active {
-  color: white;
-  font-weight: bold;
-}
-
 .nav__link {
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import ComingSoon from "./components/comingsoon/ComingSoon";
-import Profile from "./pages/Profile";
-import Users from "./pages/Users";
+import Profile from "./pages/profile/index";
+import Users from "./pages/users/index";
 
 function App() {
   return (

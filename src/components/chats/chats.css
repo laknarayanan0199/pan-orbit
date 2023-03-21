@@ -24,7 +24,7 @@
   gap: 1rem;
   background-color: #3e56c8;
   color: white;
-  padding: 0.6rem;
+  padding: 0.7rem;
   font-size: 0.9rem;
 }
 
@@ -41,6 +41,7 @@
 }
 .chat__list p {
   width: 10rem;
+  cursor: pointer;
 }
 
 .chat__lists {

@@ -19,20 +19,19 @@ const ChatBox = ({ user, chatBox, closeChatBoxHandler }) => {
                 <img src={user?.profilepicture} alt={user?.name} />
                 {user?.name}
               </p>
-              <span
-                onClick={() => setIsChats(!isChats)}
-                className="chat__icons"
-              >
-                {isChats ? (
-                  <KeyboardArrowDownIcon />
-                ) : (
-                  <KeyboardArrowUpOutlinedIcon />
-                )}
-              </span>
-              <CloseIcon
-                onClick={closeChatBoxHandler}
-                className="chat__icons"
-              />
+              <div className="chat__icons">
+                <span onClick={() => setIsChats(!isChats)}>
+                  {isChats ? (
+                    <KeyboardArrowDownIcon />
+                  ) : (
+                    <KeyboardArrowUpOutlinedIcon />
+                  )}
+                </span>
+                <CloseIcon
+                  onClick={closeChatBoxHandler}
+                  className="chat__icons"
+                />
+              </div>
             </h5>
             <span>Lorem ipsum dolor, sit amet </span>
             <span>Lorem ipsum dolor, sit amet consect</span>

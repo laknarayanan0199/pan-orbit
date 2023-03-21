@@ -7,7 +7,15 @@ const NavItem = ({ to, label }) => {
 
   return (
     <>
-      <NavLink to={to} className={({ isActive }) => setIsActive(isActive)}>
+      <NavLink
+        to={to}
+        className={({ isActive }) => setIsActive(isActive)}
+        style={
+          isActive
+            ? { color: "white", fontWeight: "bold" }
+            : { color: "#a5a5e4" }
+        }
+      >
         {label}
         {isActive ? (
           <span>
