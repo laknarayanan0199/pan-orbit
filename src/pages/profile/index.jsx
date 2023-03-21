@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 
 import "./profile.css";
-import { useFetch } from "../../utilities/fetchUsers";
+import { useFetch } from "../../components/utilities/fetchUsers";
 import Layout from "../../components/layout";
 import UserDetails from "../../components/userDetails/index";
 

@@ -3,7 +3,7 @@ import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import { useFetch } from "../../utilities/fetchUsers";
+import { useFetch } from "../utilities/fetchUsers";
 import "./chats.css";
 
 const Chats = ({ user, openChatBoxHandler }) => {

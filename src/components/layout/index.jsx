@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
-import { useFetch } from "../../utilities/fetchUsers";
+import { useFetch } from "../utilities/fetchUsers";
 import ChatBox from "../chats/ChatBox";
 import Chats from "../chats/Chats";
 import Header from "../header/index";

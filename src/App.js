@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import ComingSoon from "./components/comingsoon/ComingSoon";
+import ComingSoon from "./components/comingsoon/index";
 import Profile from "./pages/profile/index";
 import Users from "./pages/users/index";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { SyncLoader } from "react-spinners";
-import { useFetch } from "../../utilities/fetchUsers";
+import { useFetch } from "../utilities/fetchUsers";
 import map from "../../assests/google-maps-marker-position.png";
 import "./userdetails.css";
 

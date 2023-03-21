@@ -1,6 +1,6 @@
 import { Popover } from "@mui/material";
 import React, { useState } from "react";
-import PopupUsers from "../PopupUsers";
+import PopupUsers from "../popupusers/index";
 import "./header.css";
 
 const Header = ({ userDetail }) => {
@@ -9,7 +9,6 @@ const Header = ({ userDetail }) => {
   const headerName = window.location.href.split("/");
 
   const title = headerName[headerName.length - 2];
-
 
   const popupShowHandler = (event) => {
     setAnchorEl(event.currentTarget);
@@ -21,7 +20,6 @@ const Header = ({ userDetail }) => {
 
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : null;
-
 
   return (
     <>

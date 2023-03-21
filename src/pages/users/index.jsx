@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { SyncLoader } from "react-spinners";
-import { useFetch } from "../../utilities/fetchUsers";
+import { useFetch } from "../../components/utilities/fetchUsers";
 import "./users.css";
 
 const Users = () => {
