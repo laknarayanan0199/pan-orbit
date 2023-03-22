@@ -4,7 +4,7 @@
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 2rem 0 2rem;
   color: #545454;
   grid-row: 1;
   grid-column: 2 / 4;

@@ -1,7 +1,7 @@
 import React from "react";
 import { SyncLoader } from "react-spinners";
+import Map from "../map";
 import { useFetch } from "../utilities/fetchUsers";
-import map from "../../assests/google-maps-marker-position.png";
 import "./userdetails.css";
 
 const UserDetails = ({ user }) => {
@@ -14,7 +14,6 @@ const UserDetails = ({ user }) => {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
           }}
         />
       ) : (
@@ -39,7 +38,7 @@ const UserDetails = ({ user }) => {
                   {user?.website}
                 </label>
               </div>
-
+              <p className="border"></p>
               <div className="company__details">
                 <h4>Company</h4>
                 <label>
@@ -74,21 +73,20 @@ const UserDetails = ({ user }) => {
                   <p> Zipcode :</p>
                   {user?.address.zipcode}
                 </label>
-                {/* <MapHelper />
-                {/*   Lat={Number(user.address.geo.lat)}
-                  Lng={Number(user.address.geo.lng)}
-                /> */}
               </div>
               <div className="location">
-                <img src={map} alt="Geo Location" />
-                <div className="position">
-                  <label>
-                    Lat : <span>{user?.address.geo.lat}</span>
-                  </label>
-                  <label>
-                    Long : <span>{user?.address.geo.lng}</span>
-                  </label>
-                </div>
+                  <Map
+                    Lat={Number(user?.address.geo.lat)}
+                    Lng={Number(user?.address.geo.lng)}
+                  />
+              </div>
+              <div className="position">
+                <label>
+                  Lat : <span>{user?.address.geo.lat}</span>
+                </label>
+                <label>
+                  Long : <span>{user?.address.geo.lng}</span>
+                </label>
               </div>
             </div>
           </div>
